@@ -13,7 +13,7 @@ export default function ProductForm({ addProduct }) {
       id: Date.now(),
       title,
       price,
-      description: "Produto adicionado manualmente",
+      description: "Produto adicionado manuelmente",
       image: "https://via.placeholder.com/200"
     };
 
@@ -27,19 +27,15 @@ export default function ProductForm({ addProduct }) {
       <h3>Adicionar Produto</h3>
 
       <div className="flex gap-2">
-        <InputText
-          placeholder="Nome do produto"
-          value={title}
+        <InputText placeholder="Nome do produto" value={title}
           onChange={e => setTitle(e.target.value)}
         />
 
-        <InputText
-          placeholder="Preço"
-          value={price}
+        <InputText placeholder="Preço" value={price}
           onChange={e => setPrice(e.target.value)}
         />
 
-        <Button label="Adicionar" icon="pi pi-plus" />
+        <Button label="Adicionar" />
       </div>
     </form>
   );

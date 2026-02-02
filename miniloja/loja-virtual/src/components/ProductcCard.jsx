@@ -1,10 +1,9 @@
 import { Card } from "primereact/card";
 import { Button } from "primereact/button";
-import styled from "styled-components";
 
 export default function ProductCard({ product }) {
   const footer = (
-    <Button label="Comprar" icon="pi pi-shopping-cart" />
+    <Button label="Comprar"/>
   );
 
   return (
@@ -13,12 +12,11 @@ export default function ProductCard({ product }) {
       subTitle={`R$ ${product.price}`}
       footer={footer}
       className="m-2"
-      style={{height:"100%"
+      style={{
+        height:"100%"
       }}
     >
-      <img
-        src={product.image}
-        alt={product.title}
+      <img src={product.image} alt={product.title}
         style={{ width: "100%", height: "200px", objectFit: "contain" }}
       />
       <p className="mt-3">{product.description}</p>
