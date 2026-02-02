@@ -7,6 +7,12 @@ const ProductCard = () => {
                     <li className="col-12 md:col-3 border-round-md">
                         produto 1
                     </li>
+                    <li className="col-12 md:col-3 border-round-md">
+                        produto 1
+                    </li>
+                    <li className="col-12 md:col-3 border-round-md">
+                        produto 1
+                    </li>
                 </ul>
             </section>
         </>
